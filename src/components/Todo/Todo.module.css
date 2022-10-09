@@ -1,0 +1,38 @@
+.todo {
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+    display: flex;
+  }
+
+  .button {
+    margin-left: 280px;
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+      format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    background: hsl(40, 95%, 86%);
+    border: 1px solid hsl(40, 95%, 86%);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #ffaa3b;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 16px;
+    min-height: 20px;
+    width: 60px;
+    outline: 0;
+    padding: 6px 5px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-bottom: 40px;
+  }
