@@ -7,6 +7,13 @@
   padding-inline-start: 0px;
 }
 
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 2.5rem;
+  font-size: 1rem;
+}
+
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
@@ -30,5 +37,7 @@
 }
 
 .notchecked {
-  color: rgb(67, 67, 67)
+  color: rgb(67, 67, 67);
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,0 +1,16 @@
+.wrapper {
+    padding-top: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.buttons button {
+    font-size: 0.8rem;
+}

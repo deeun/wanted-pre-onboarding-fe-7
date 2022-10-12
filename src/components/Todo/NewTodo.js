@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./NewTodo.module.css";
 import Input from "@mui/material/Input";
 import axios from "../../api/axios";
+import Button from "../UI/Button";
 
 const NewTodo = (props) => {
   const [newTodo, setNewTodo] = useState("");
@@ -20,16 +21,16 @@ const NewTodo = (props) => {
       })
       .then(function (response) {
         setNewTodo("");
-        console.log(response);
+        props.updateHandler();
       })
       .catch(function (error) {
-        console.log(error + "에러 ㅠㅠ");
+        console.log(error);
       });
   };
 
   return (
-    <>
-      <form>
+    <div>
+      <form className={styles.form}>
         <Input
           id="standard-basic"
           variant="standard"
@@ -40,11 +41,12 @@ const NewTodo = (props) => {
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
         />
-        <button onClick={handleSubmit} className={styles.button}>
+        <br/>
+        <Button onClick={handleSubmit} style={{width : "100%", marginTop : 0}}>
           추가하기
-        </button>
+        </Button>
       </form>
-    </>
+    </div>
   );
 };
 
