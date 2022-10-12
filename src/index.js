@@ -16,17 +16,14 @@ root.render(
     <AuthContextProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/todo" element={<Todo />} />
-          {/* <Route path="*" element={<App />} />
           <Route element={<ProtectedRoutesAuth />}>
+            <Route path="*" element={<App />} />
             <Route path="*" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
           </Route>
           <Route element={<ProtectedRoutes />}>
             <Route path="/todo" element={<Todo />} />
-          </Route> */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </AuthContextProvider>
