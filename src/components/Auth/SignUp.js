@@ -44,8 +44,8 @@ const SignUp = () => {
           headers: { "Content-Type": "application/json" },
         }
       );
-      console.log(response);
       if (response.status === 201) {
+        alert("🧚회원가입 성공🧚‍♀️");
         setSuccess(true);
         setEmail("");
         setPassword("");
